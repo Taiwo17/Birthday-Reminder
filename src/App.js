@@ -2,7 +2,7 @@ import Birthday from './Birthday';
 
 function App() {
   return (
-    <div className='App'>
+    <div>
       <Birthday />
     </div>
   );

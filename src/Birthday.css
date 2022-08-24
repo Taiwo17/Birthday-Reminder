@@ -10,13 +10,18 @@
 body {
   background-color: var(--first-color);
 }
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
 .section {
   display: flex;
   width: 400px;
-  margin: 50px auto;
   flex-direction: column;
   background-color: var(--second-color);
-  height: 550px;
+  height: 100vh;
   justify-content: space-around;
   border-radius: 10px;
 }
@@ -36,7 +41,6 @@ p {
 
 .container {
   width: 350px;
-  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -61,6 +65,7 @@ img {
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .btn {
   padding: 10px;
@@ -73,4 +78,79 @@ img {
   cursor: pointer;
   align-items: center;
   font-family: 'Poppins', sans-serif;
+}
+.contain {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 0px 20px 0px 20px;
+}
+/* Second Section  */
+.wrapper .formData {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  background-color: var(--second-color);
+  height: 400px;
+  /* justify-content: space-around; */
+  border-radius: 10px;
+}
+.wrapper .formData .formInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+  margin-top: 70px;
+}
+.formData .formInfo h4 {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+input[type='text'] {
+  padding: 10px;
+  border: 1px solid var(--first-color);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+input[type='number'] {
+  padding: 10px;
+  border: 1px solid var(--first-color);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+input[type='number']::placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+
+input[type='url'] {
+  padding: 10px;
+  border: 1px solid var(--first-color);
+  border-radius: 5px;
+}
+input[type='url']::placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Second Button styling */
+.formData .formInfo .buttOne {
+  padding: 8px;
+  margin: 10px 0px 10px 0px;
+  color: var(--second-color);
+  background-color: var(--first-color);
+  border: 1px solid var(--first-color);
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+@media screen and (device-width: 480px) and (device-height: 800px) {
+  .wrapper .section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
 }
